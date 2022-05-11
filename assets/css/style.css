@@ -4,3 +4,131 @@
   padding: 0;
   margin: 0;
 }
+
+:root{
+  --lightest-color: #f3f3f3;
+  --light-color: #ececec;
+  --medium-color: #dbdbdb;
+
+  --border-radius: 10px;
+
+  font-family: sans-serif;
+  font-size: 18px;
+}
+
+table{
+  width: 100%;
+  max-width: 1000px;
+  min-width: 800px;
+
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+caption{
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+  font-size: 40px;
+  line-height: 1.2em;
+  text-transform: uppercase;
+}
+
+td{
+  padding: 1em 0;
+
+  background-color: var(--lightest-color);
+
+  text-align: center;
+  vertical-align: center;
+}
+
+thead th{
+  background-color: var(--lightest-color);
+  color: #fff;
+}
+
+thead th p:first-child{
+  padding-top: 15px;
+  margin-bottom: 35px;
+}
+
+thead th p:nth-child(2){
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+
+thead th p:nth-child(2) + p{
+  margin-bottom: 10px;
+}
+
+thead th:not(th:first-child){
+  width: 18%;
+}
+
+thead th:first-child{
+  border-top-left-radius: var(--border-radius);
+  background-color: #7987ac;
+}
+
+thead th:first-child::first-letter{
+  text-transform: uppercase;
+}
+
+thead th:nth-child(2){
+  background-color: #4f628d;
+}
+
+thead th:nth-child(3){
+  background-color: #2f4173;
+}
+
+thead th:nth-child(4){
+  background-color: #162954;
+}
+
+thead th:last-child{
+  border-top-right-radius: var(--border-radius);
+  background-color: #07153a;
+}
+
+tbody td:first-child{
+  padding-left: 1em;
+
+  text-align: left;
+}
+
+tfoot td:first-child{
+  border-bottom-left-radius: var(--border-radius);
+}
+
+tfoot td:last-child{
+  border-bottom-right-radius: var(--border-radius);
+}
+
+tbody tr:nth-child(odd) td:nth-child(odd),
+tfoot tr:nth-child(odd) td:nth-child(odd){
+  background-color: var(--medium-color);
+}
+
+tbody tr:nth-child(odd) td:nth-child(even),
+tbody tr:nth-child(even) td:nth-child(odd),
+tfoot tr:nth-child(odd) td:nth-child(even){
+  background-color: var(--light-color);
+}
+tfoot td{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+tfoot td button{
+  padding: 10px 50px;
+  border: 1px solid #a8a8a8;
+
+  background-color: var(--medium-color);
+  color: #676566;
+
+  text-transform: uppercase;
+
+  
+}
