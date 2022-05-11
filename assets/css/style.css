@@ -46,6 +46,8 @@ td{
 thead th{
   background-color: var(--lightest-color);
   color: #fff;
+
+  font-size: 22px;
 }
 
 thead th p:first-child{
@@ -124,8 +126,9 @@ tfoot td{
 tfoot td button{
   padding: 10px 50px;
   border: 1px solid #a8a8a8;
+  border-radius: 0;
 
-  background-color: var(--medium-color);
+  background-color: #d3d3d3;
   color: #676566;
 
   text-transform: uppercase;
